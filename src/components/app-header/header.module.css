@@ -1,0 +1,38 @@
+.header {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1280px;
+  min-height: 88px;
+  display: flex;
+  justify-content: center;
+}
+
+.header::before {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 88px;
+  background-color: #1c1c21;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.src {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.paragraph {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 88px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+}

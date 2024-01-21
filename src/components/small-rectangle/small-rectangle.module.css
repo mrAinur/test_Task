@@ -1,0 +1,44 @@
+.itemBox {
+  margin: 0;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100px));
+  grid-template-rows: repeat(2, fit-content(100px));
+  grid-template-areas:
+    "info img"
+    "button button";
+  gap: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.itemBox:hover {
+  box-shadow: 0px 0px 10px 5px rgba(49, 255, 17, 1);
+}
+
+.paragraphBox {
+  margin: 0px;
+  padding: 0px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: info;
+}
+
+.paragraph {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+}
+
+.img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  object-fit: contain;
+  grid-area: img;
+}

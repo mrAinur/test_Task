@@ -1,0 +1,18 @@
+.mainBox {
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 1280px;
+  min-height: 100vh;
+}
+
+.listItems {
+  margin: 30px auto 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: repeat(1, fit-content(250px));
+  gap: 32px 24px;
+}
