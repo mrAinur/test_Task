@@ -1,7 +1,6 @@
 import { useForm } from "../../hooks/useForm";
 import style from "./input-line.module.css";
 import ButtonSearch from "../button-search/button-search";
-import { searchTextButton, searchWidthButton } from "../../utils/constants";
 
 export default function InputLine() {
   const { values, handleChange } = useForm({ search: "" });
@@ -16,11 +15,7 @@ export default function InputLine() {
         onChange={e => handleChange(e)}
         name="search"
       />
-      <ButtonSearch
-        width={searchWidthButton}
-        text={searchTextButton}
-        inputText={values.search}
-      />
+      <ButtonSearch inputText={values.search} />
     </div>
   );
 }

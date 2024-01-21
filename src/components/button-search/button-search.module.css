@@ -3,6 +3,7 @@
   padding: 0;
   color: #fff;
   height: 39px;
+  width: 150px;
   background: linear-gradient(63.18deg, #801ab3 0%, #4c4cff 100%);
   display: flex;
   align-items: center;
@@ -11,6 +12,7 @@
   border-radius: 10px;
   border: none;
   transition: 0.7s;
+  font-size: 14px;
 }
 
 .button:hover {

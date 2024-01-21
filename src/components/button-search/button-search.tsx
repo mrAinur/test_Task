@@ -8,11 +8,9 @@ import {
 import { getCharacters } from "../../utils/workWithApi";
 
 type Props = {
-  width: number;
-  text: string;
   inputText: string;
 };
-export default function ButtonSearch({ width, text, inputText }: Props) {
+export default function ButtonSearch({ inputText }: Props) {
   const dispatch = useAppDispatch();
 
   const getCharacterInfo: MouseEventHandler<HTMLButtonElement> = e => {
@@ -25,10 +23,9 @@ export default function ButtonSearch({ width, text, inputText }: Props) {
     <button
       type="button"
       className={style.button}
-      style={{ width: `${width}px` }}
       onClick={e => getCharacterInfo(e)}
     >
-      {text}
+      Найти
     </button>
   );
 }

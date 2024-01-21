@@ -2,7 +2,6 @@ import { Character } from "../../utils/types";
 import style from "./small-rectangle.module.css";
 import avatarMock from "../../images/avatar.jpg";
 import ButtonLearnMore from "../button-learn-more/button-learn-more";
-import { learnMoreWidthButton, learnTextButton } from "../../utils/constants";
 
 type Props = {
   data: Character;
@@ -18,11 +17,7 @@ export default function SmallRectangle({ data }: Props) {
         <p className={style.paragraph}>Eye color: {data.eye_color}</p>
       </div>
       <img src={avatarMock} alt="Картинка персонажа" className={style.img} />
-      <ButtonLearnMore
-        width={learnMoreWidthButton}
-        text={learnTextButton}
-        characterName={data.name}
-      />
+      <ButtonLearnMore characterName={data.name} />
     </li>
   );
 }
